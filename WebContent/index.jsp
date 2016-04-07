@@ -20,9 +20,9 @@
             <label for="Principal">Enter Principal (Amount in $):</label>
                 <input id="Principal" name="Principal" value="${param.Principal}"><br>
                 <label for="AnnualIR">Enter Annual Interest Rate (APR):</label>
-                <input id="AnnualIR" name="AnnualIR" value="${param.AnnualIR}"><br>
+                <input type="number" min="1" max= "50" step="0.5" id="AnnualIR" name="AnnualIR" value="${param.AnnualIR}"><br>
                 <label for="years">Enter No. of Years (Term):</label>
-                <input id="years" name="years" value="${param.years}"><br>
+                <input type="number" min="1" max= "50" step="1" id="years" name="years" value="${param.years}"><br>
                 <input type="hidden" name="click" value="1">
                
                 <input type="submit" class="btn btn-default">
